@@ -1,0 +1,40 @@
+<suite name="PositiveTests" verbose="1">
+
+    <test name="PositiveSearchTests" >
+        <classes>
+            <class name="tests.SearchTests">
+                <methods>
+                    <include name="checkAmountOfDirectResultsInSearchList" />
+                    <include name="checkProductsTitleContainsSearchKeyword" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="PositivePriceFilterTests" >
+        <classes>
+            <class name="tests.PriceFilterTests">
+                <methods>
+                    <include name="checkPriceFilterFirstPageResultsMatchingValidPriceRange" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="PositiveCartTests" >
+        <classes>
+            <class name="tests.CartTests" />
+        </classes>
+    </test>
+
+    <test name="PositiveAddToCartTests" >
+        <classes>
+            <class name="tests.AddToCartTests" />
+        </classes>
+    </test>
+
+    <test name="PositiveNavigationToProductTests" >
+        <classes>
+            <class name="tests.NavigationToProductTests" />
+        </classes>
+    </test>
+</suite>

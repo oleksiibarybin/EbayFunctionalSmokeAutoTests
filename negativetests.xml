@@ -1,0 +1,28 @@
+<suite name="NegativeTests" verbose="1">
+
+    <test name="NegativeSearchTests" >
+        <classes>
+            <class name="tests.SearchTests">
+                <methods>
+                    <include name="checkMessageTextIfNoneResultsFound" />
+                    <include name="checkErrorMessageTextForInvalidSearchKeyword" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="NegativePriceFilterTests" >
+        <classes>
+            <class name="tests.PriceFilterTests">
+                <methods>
+                    <include name="checkPriceFilterNoResultsFoundForZeroMinAndMaxPriceRange" />
+                    <include name="checkPriceFilterResponseForNegativeValueAsInvalidMinPrice" />
+                    <include name="checkPriceFilterResponseForNegativeValueAsInvalidMaxPrice" />
+                    <include name="checkPriceFilterResponseForCharacterValueAsInvalidMinPrice" />
+                    <include name="checkPriceFilterResponseForCharacterValueAsInvalidMaxPrice" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
