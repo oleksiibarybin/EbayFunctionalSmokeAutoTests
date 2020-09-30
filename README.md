@@ -1,6 +1,6 @@
 # EbayFunctionalSmokeAutoTests
 
--Java
--Maven
--Selenium WebDriver
--Page Factory
+- Java
+- Maven
+- Selenium WebDriver
+- Page Factory
