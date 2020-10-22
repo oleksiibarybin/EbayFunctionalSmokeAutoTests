@@ -8,13 +8,13 @@ import static org.testng.Assert.assertTrue;
 
 public class SearchTests extends BaseTest {
 
-    private String SEARCH_KEYWORD = "samsung";
-    private String SEARCH_PHRASE = "acer aspire 7 a715-75g";
-    private String SEARCH_NO_RESULTS_PHRASE = "dlkfjdslfkjsdldskj";
-    private String EXPECTED_SEARCH_NO_RESULTS_FOUND_MESSAGE = "No exact matches found";
-    private String SEARCH_KEYWORD_INVALID = "-1";
-    private String EXPECTED_SEARCH_INVALID_KEYWORD_ERROR_MESSAGE = "Let's try that again. This time add more details so we can search for better matches.";
-    private int TIME_TO_WAIT = 30;
+    private static final String SEARCH_KEYWORD = "samsung";
+    private static final String SEARCH_PHRASE = "acer aspire 7 a715-75g";
+    private static final String SEARCH_NO_RESULTS_PHRASE = "dlkfjdslfkjsdldskj";
+    private static final String EXPECTED_SEARCH_NO_RESULTS_FOUND_MESSAGE = "No exact matches found";
+    private static final String SEARCH_KEYWORD_INVALID = "-1";
+    private static final String EXPECTED_SEARCH_INVALID_KEYWORD_ERROR_MESSAGE = "Let's try that again. This time add more details so we can search for better matches.";
+    private static final int TIME_TO_WAIT = 30;
 
     @Test
     public void checkAmountOfDirectResultsInSearchList() {

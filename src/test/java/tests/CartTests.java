@@ -7,11 +7,11 @@ import static org.testng.Assert.assertTrue;
 
 public class CartTests extends BaseTest{
 
-    private String[] SEARCH_KEYWORDS = new String[] {"guitar", "viola"};
-    private String[] EXPECTED_AMOUNT_OF_PRODUCT_IN_CART = new String[] {"1", "2"};
-    private String EXPECTED_NONE_PRODUCTS_IN_CART_MESSAGE = "You don't have any items in your cart.";
-    private String EXPECTED_FOLLOWING_REMOVED_PRODUCT_LINK_INFORMATIONAL_MESSAGE = "was removed from your cart.";
-    private int TIME_TO_WAIT = 20;
+    private static final String[] SEARCH_KEYWORDS = new String[] {"guitar", "viola"};
+    private static final String[] EXPECTED_AMOUNT_OF_PRODUCT_IN_CART = new String[] {"1", "2"};
+    private static final String EXPECTED_NONE_PRODUCTS_IN_CART_MESSAGE = "You don't have any items in your cart.";
+    private static final String EXPECTED_FOLLOWING_REMOVED_PRODUCT_LINK_INFORMATIONAL_MESSAGE = "was removed from your cart.";
+    private static final int TIME_TO_WAIT = 20;
 
     @Test
     public void checkRemoveOneOfOneProductFromCart() {

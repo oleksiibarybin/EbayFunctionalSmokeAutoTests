@@ -7,8 +7,8 @@ import static org.testng.Assert.assertTrue;
 
 public class NavigationToProductTests extends BaseTest{
 
-    private String VENDOR_NAME_SAMSUNG = "samsung";
-    private int TIME_TO_WAIT = 10;
+    private static final String VENDOR_NAME_SAMSUNG = "samsung";
+    private static final int TIME_TO_WAIT = 10;
 
 
     @Test

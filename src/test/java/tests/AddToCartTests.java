@@ -6,9 +6,9 @@ import static org.testng.Assert.assertEquals;
 
 public class AddToCartTests extends BaseTest {
 
-    private String SEARCH_KEYWORD = "guitar";
-    private String EXPECTED_AMOUNT_ONE_PRODUCT_IN_CART = "1";
-    private int TIME_TO_WAIT = 20;
+    private static final String SEARCH_KEYWORD = "guitar";
+    private static final String EXPECTED_AMOUNT_ONE_PRODUCT_IN_CART = "1";
+    private static final int TIME_TO_WAIT = 20;
 
     @Test
     public void checkAddingOneProductFromSearchResultsListToCart() {
